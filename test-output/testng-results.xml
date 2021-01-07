@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="36594" started-at="2021-01-07T13:41:31Z" finished-at="2021-01-07T13:42:08Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="36594" started-at="2021-01-07T13:41:31Z" finished-at="2021-01-07T13:42:08Z">
+      <class name="seleniumdemo.App">
+        <test-method status="PASS" signature="Task1()[pri:0, instance:seleniumdemo.App@b5cc23a]" name="Task1" duration-ms="11149" started-at="2021-01-07T13:41:31Z" finished-at="2021-01-07T13:41:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Task1 -->
+        <test-method status="PASS" signature="Task2()[pri:0, instance:seleniumdemo.App@b5cc23a]" name="Task2" duration-ms="9966" started-at="2021-01-07T13:41:43Z" finished-at="2021-01-07T13:41:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Task2 -->
+        <test-method status="PASS" signature="Task3()[pri:0, instance:seleniumdemo.App@b5cc23a]" name="Task3" duration-ms="15422" started-at="2021-01-07T13:41:53Z" finished-at="2021-01-07T13:42:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Task3 -->
+      </class> <!-- seleniumdemo.App -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
