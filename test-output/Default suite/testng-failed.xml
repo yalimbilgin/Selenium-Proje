@@ -5,6 +5,9 @@
     <classes>
       <class name="seleniumdemo.App">
         <methods>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeMethod"/>
           <include name="Task3"/>
         </methods>
       </class> <!-- seleniumdemo.App -->
