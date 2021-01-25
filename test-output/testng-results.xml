@@ -2,54 +2,58 @@
 <testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27132" started-at="2021-01-17T13:16:24Z" finished-at="2021-01-17T13:16:52Z">
+  <suite name="Default suite" duration-ms="21920" started-at="2021-01-25T06:45:42Z" finished-at="2021-01-25T06:46:04Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27132" started-at="2021-01-17T13:16:24Z" finished-at="2021-01-17T13:16:52Z">
+    <test name="Default test" duration-ms="21920" started-at="2021-01-25T06:45:42Z" finished-at="2021-01-25T06:46:04Z">
       <class name="seleniumdemo.App">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:seleniumdemo.App@db44aa2]" name="beforeSuite" is-config="true" duration-ms="23" started-at="2021-01-17T13:16:24Z" finished-at="2021-01-17T13:16:24Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:seleniumdemo.App@3d6300e8]" name="beforeSuite" is-config="true" duration-ms="7" started-at="2021-01-25T06:45:42Z" finished-at="2021-01-25T06:45:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:seleniumdemo.App@db44aa2]" name="beforeMethod" is-config="true" duration-ms="6136" started-at="2021-01-17T13:16:25Z" finished-at="2021-01-17T13:16:31Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:seleniumdemo.App@3d6300e8]" name="beforeMethod" is-config="true" duration-ms="5998" started-at="2021-01-25T06:45:42Z" finished-at="2021-01-25T06:45:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="Task1()[pri:0, instance:seleniumdemo.App@db44aa2]" name="Task1" duration-ms="3119" started-at="2021-01-17T13:16:31Z" finished-at="2021-01-17T13:16:34Z">
+        <test-method status="PASS" signature="Task1()[pri:0, instance:seleniumdemo.App@3d6300e8]" name="Task1" duration-ms="2311" started-at="2021-01-25T06:45:48Z" finished-at="2021-01-25T06:45:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Task1 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:seleniumdemo.App@db44aa2]" name="beforeMethod" is-config="true" duration-ms="1448" started-at="2021-01-17T13:16:34Z" finished-at="2021-01-17T13:16:35Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:seleniumdemo.App@3d6300e8]" name="beforeMethod" is-config="true" duration-ms="1819" started-at="2021-01-25T06:45:50Z" finished-at="2021-01-25T06:45:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="Task2()[pri:0, instance:seleniumdemo.App@db44aa2]" name="Task2" duration-ms="6026" started-at="2021-01-17T13:16:35Z" finished-at="2021-01-17T13:16:41Z">
+        <test-method status="PASS" signature="Task2()[pri:0, instance:seleniumdemo.App@3d6300e8]" name="Task2" duration-ms="5418" started-at="2021-01-25T06:45:52Z" finished-at="2021-01-25T06:45:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Task2 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:seleniumdemo.App@db44aa2]" name="beforeMethod" is-config="true" duration-ms="2228" started-at="2021-01-17T13:16:41Z" finished-at="2021-01-17T13:16:43Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:seleniumdemo.App@3d6300e8]" name="beforeMethod" is-config="true" duration-ms="2126" started-at="2021-01-25T06:45:57Z" finished-at="2021-01-25T06:46:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="Task3()[pri:0, instance:seleniumdemo.App@db44aa2]" name="Task3" duration-ms="8114" started-at="2021-01-17T13:16:43Z" finished-at="2021-01-17T13:16:52Z">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
+        <test-method status="FAIL" signature="Task3()[pri:0, instance:seleniumdemo.App@3d6300e8]" name="Task3" duration-ms="4231" started-at="2021-01-25T06:46:00Z" finished-at="2021-01-25T06:46:04Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[element not interactable
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="all-devices-section"]/div[26]/a/div[1]/div/div[1]/div/div[1]/figure"}
   (Session info: chrome=87.0.4280.141)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.0.0-alpha-5', revision: 'b3a0d621cc'
-System info: host: 'DESKTOP-UORS9NB', ip: '192.168.1.35', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+System info: host: 'DESKTOP-UORS9NB', ip: '192.168.1.46', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56609}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: c80f98d4e656d44a35862ddbefb6fc1a]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:55421}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 19c9593dd2f3bb89f3470a304c7bb5eb
+*** Element info: {Using=xpath, value=//*[@id="all-devices-section"]/div[26]/a/div[1]/div/div[1]/div/div[1]/figure}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="all-devices-section"]/div[26]/a/div[1]/div/div[1]/div/div[1]/figure"}
   (Session info: chrome=87.0.4280.141)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.0.0-alpha-5', revision: 'b3a0d621cc'
-System info: host: 'DESKTOP-UORS9NB', ip: '192.168.1.35', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+System info: host: 'DESKTOP-UORS9NB', ip: '192.168.1.46', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56609}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: c80f98d4e656d44a35862ddbefb6fc1a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:55421}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 19c9593dd2f3bb89f3470a304c7bb5eb
+*** Element info: {Using=xpath, value=//*[@id="all-devices-section"]/div[26]/a/div[1]/div/div[1]/div/div[1]/figure}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -60,10 +64,12 @@ at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpRespo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:316)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:333)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:451)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:394)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:325)
 at seleniumdemo.Pasaj.clickMacPro(Pasaj.java:56)
-at seleniumdemo.App.Task3(App.java:53)
+at seleniumdemo.App.Task3(App.java:31)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -91,11 +97,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Task3 -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:seleniumdemo.App@db44aa2]" name="afterSuite" is-config="true" duration-ms="166" started-at="2021-01-17T13:16:52Z" finished-at="2021-01-17T13:16:52Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:seleniumdemo.App@3d6300e8]" name="afterSuite" is-config="true" duration-ms="55" started-at="2021-01-25T06:46:04Z" finished-at="2021-01-25T06:46:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
