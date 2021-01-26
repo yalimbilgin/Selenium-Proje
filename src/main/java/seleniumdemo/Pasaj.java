@@ -22,38 +22,32 @@ public class Pasaj extends TestBase {
 	private By price9 = By.xpath("//*[@id=\"product-detail\"]/div[1]/div/div/div[2]/form/div[2]/label/div[2]/a[2]");
 	
 	public Pasaj() {
+		//super();
 		logger = LogManager.getLogger(Pasaj.class);
 	}
 	
 	public void clickBasket() {
-		wait.until(ExpectedConditions.elementToBeClickable(sepet));
-		driver.findElement(sepet).click();
+		actions.clickElement(sepet);
 		logger.debug("Clicked the sepet button");
 	}
 	
 	public boolean returnResult() {
-		Boolean result = wait.until(ExpectedConditions.attributeContains(driver.findElement(text), "innerHTML", "Sepetinizde ürün bulunmamaktadır."));
-		logger.debug("Result" + result);
-		return result;
+		logger.debug("Result is ready");
+		return elementService.waitTillElementContinsText(text, "Sepetinizde ürün bulunmamaktadır.");
 	}
 	
-	public double format(String str) {
+	private double format(String str) {
 		return Double.parseDouble(str.charAt(0) + str.substring(2, 5) +"." + str.substring(7));
 	}
 	
-	public void scrollBottom() {
-		driver.findElement(By.cssSelector("body")).sendKeys(Keys.CONTROL, Keys.END);
-		logger.debug("Scrolled bottom");
-	}
 	
 	public void clickMac() {
-		wait.until(ExpectedConditions.elementToBeClickable(mac));
-		driver.findElement(mac).click();
+		actions.clickElement(mac);
 		logger.debug("Clicked the Macbook button");
 	}
 	
 	public void clickMacPro() {
-		driver.findElement(macPro).click();
+		actions.clickElement(macPro);
 		logger.debug("Clicked the Macbook Pro element");
 	}
 	

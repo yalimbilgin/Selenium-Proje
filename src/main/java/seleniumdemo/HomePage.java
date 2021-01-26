@@ -19,38 +19,34 @@ public class HomePage extends TestBase {
 	private By pasaj = By.xpath("/html/body/header/div[2]/div/nav/a[1]");
 	
 	public HomePage() {
-		
+		//super();
 		logger = LogManager.getLogger(HomePage.class);
 	}
 	
 	public void search() {
-		wait.until(ExpectedConditions.elementToBeClickable(searchButton));
-		driver.findElement(searchButton).click();
+		actions.clickElement(searchButton);
 		logger.debug("Clicked the search button");
 	}
 	
 	public void makeSearch(String str) {
-		driver.findElement(inputSearch).sendKeys(str);
+		actions.setTextElement(inputSearch, str);
 		logger.debug("Entered the search parameter");
-		driver.findElement(inputSearch).sendKeys(Keys.ENTER);
+		actions.pressEnter(inputSearch);
 		logger.debug("Pressed Enter");
 	}
 	
 	public void clickCihazlar() {
-		WebElement cihazlarClickable = wait.until(ExpectedConditions.elementToBeClickable(cihazlar));
-		cihazlarClickable.click();
+		actions.clickElement(cihazlar);
 		logger.debug("Clicked cihazlar button");
 	}
 	
 	public boolean returnResult() {
-		
-		Boolean result = wait.until(ExpectedConditions.attributeContains(driver.findElement(span), "innerHTML", "iPhone"));
-		logger.debug("Result" + result);
-		return result;
+		logger.debug("Result is ready");
+		return elementService.waitTillElementContinsText(span, "iPhone");
 	}
 	
 	public void clickPasaj() {
-		driver.findElement(pasaj).click();
+		actions.clickElement(pasaj);
 		logger.debug("Clicked the pasaj button");
 	}
 	

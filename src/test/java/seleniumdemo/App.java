@@ -1,6 +1,5 @@
 package seleniumdemo;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class App extends TestBase
@@ -13,14 +12,14 @@ public class App extends TestBase
 		home.search();
 		home.makeSearch("iPhone");
 		home.clickCihazlar();
-		Assert.assertEquals(home.returnResult(), true);
+		validations.verifyBooleanEqualsTrue(home.returnResult());
 	}
 	
 	@Test
 	public void Task2() {
 		home.clickPasaj();
 		pasaj.clickBasket();
-		Assert.assertEquals(pasaj.returnResult(), true);
+		validations.verifyBooleanEqualsTrue(pasaj.returnResult());
 	}
 	
 	@Test
@@ -29,8 +28,8 @@ public class App extends TestBase
 		pasaj.scrollBottom();
 		pasaj.clickMac();
 		pasaj.clickMacPro();
-		Assert.assertEquals(pasaj.returnResult1(), true);
-		Assert.assertEquals(pasaj.returnResult2(), true);
+		validations.verifyBooleanEqualsTrue(pasaj.returnResult1());
+		validations.verifyBooleanEqualsTrue(pasaj.returnResult2());
 	}
    
 }
